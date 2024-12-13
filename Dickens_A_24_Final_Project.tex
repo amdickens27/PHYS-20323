@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}%renewcommand{\topfraction}{1.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\setlength {\textwidth}{6.6in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in                                                                               
+\setlength {\textheight}{9.0in}
+\voffset=-1.00in
+\topmargin=1.0in
+\headheight=0.0in
+\headsep=0.00in
+\footskip=0.50in                                         
+\setcounter{page}{1}
+\begin{document}
+\def\pos{\medskip\quad}
+\def\subpos{\smallskip \qquad}
+\newfont{\nice}{cmr12 scaled 1250}
+\newfont{\name}{cmr12 scaled 1080}
+\newfont{\swell}{cmbx12 scaled 800}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+{\large
+PHYSICS  20323: Scientific Analysis \& Modeling - Fall 2024
+}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\large Project: Alyssa Dickens}\\\vskip0.25in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent {\bf PROJECT INFORMATION:} \\
+
+Radioactive decay is a process that can be modeled. Python software can be utilized to run large \indent numbers and simulations that depict the randomness of radioactive decay along with calculating \indent energy and standard deviation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf PURPOSE:} \\
+
+This project serves to model the radioactive decay process and the resulting energies as well as \indent determine the correct thickness of a shield that protects from $\alpha$-particle radiation. 
+
+% You can use superscripts (m s$^{-1}$) or subscripts (M$_{*}$). 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bullet Point & Numbered list - lists can also be nested as below
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{itemize}      % first begin-----------]
+%\item Item 1         %                                       
+%\begin{enumerate}    %       second begin----]        
+%\item Item a         %                              
+%\begin{itemize}      %           third begin-]      
+%\item Item c         %                     
+%\end{itemize}        %           third end --]  
+%\item Item b         %                          
+%\end{enumerate}      %       second end -----]  
+%\item Item 2         %                          
+%\begin{itemize}      %      fourth begin ----]  
+%\item Item x         %                       
+%\begin{enumerate}    %         fifth begin  -] 
+%\item Item z         %                       
+%\end{enumerate}      %          fifth end ---] 
+%\end{itemize}        %       fourth end------] 
+%\item Item 3         %                         
+%\end{itemize}        % first end ------------]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.15in
+\noindent {\bf PROCEDURE:} \\                    
+
+\begin{itemize} 
+\item Build a Python program in a Jupiter Lab Notebook to model the decay of 20,000 atoms.                                     
+\begin{enumerate}         
+\item Allow sufficient time to show all atoms decaying into the final element.                          
+\begin{itemize}     
+\item Add a plot with a logarithmic y-scale to show smaller amounts of elements if they cannot be seen on the larger plot.         %                     
+\end{itemize} 
+\item Incorporate randomness through half-lives and percentages given through project sheet (Fig. 1).                          
+\end{enumerate}    
+\item Add on to the program to calculate the energy generated from each decay process (Fig. 1)                      
+\begin{itemize}
+\item Calculate the total energy and standard deviation of individual decay energies.              
+\end{itemize} 
+\item Determine how thick of a shield (cm) is necessary to protect humans from $\alpha$-particle decay if 1cm blocks 1750 MeV.     
+\end{itemize}   
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth, frame]{Project_instructions.png}
+    \caption{Diagram showing half-lives and process of decay}
+    \label{fig:enter-label}
+\end{figure} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage % inserts a page break
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf RESULTS:}\\
+
+\indent The decay process of 20,000 atoms of $^{222}$Rn is displayed in Fig. 2. $^{222}$Rn is in black and $^{207}$Pb \indent is in magenta.\\
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.5\linewidth, frame]{Project_graph_1.png}
+    \caption{Python-generated plot of decay process}
+    \label{fig:enter-label}
+\end{figure}
+\\
+
+\indent A logarithmic scale is used to show the decay of atoms that had low percentages of occurrence. \indent $^{214}$Bi is in green, $^{207}$Tl is in teal, $^{214}$Pb is in red, and $^{218}$Po is in blue.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.5\linewidth, frame]{Log_plot.png}
+    \caption{Python-generated logarithmic plot of decay process}
+    \label{fig:enter-label}
+\end{figure}
+\\
+\clearpage 
+
+\indent The energy generated from each type of decay process and total energy, along with standard \indent deviation for each, is listed in the table below.
+
+\begin{center}
+\begin{tabular}{|l|crr|}\hline\hline
+Decay Type & Avg. Decay Energy & Standard Deviation & \\\hline\hline
+$\alpha$   & 80089.2   &  37.99  &  \\
+$R$   & 119607.6  &  37.54 & \\
+$\beta$   & 62.5  &  9.12 &  \\
+$Z$   & 139765.5   &  26.42 &  \\
+Total   & 339524.8  &  67.85 &  \\\hline
+\end{tabular}\vskip 0.2in
+\end{center}
+\\
+
+\indent A 45.83 cm shield would be necessary to protect humans from $\alpha$-particle radiation. This is found \indent from: \ 
+\begin{equation}
+    E_{blocked energy} = \frac{80089.2}{3*37.99} = 80203.17 \ \ MeV
+\end{equation}
+\\
+\begin{equation}
+    Thickness = \frac{80203.17}{1750} = 45.83 \ \ cm
+\end{equation}
+
+\indent where 80089.2 is the Average Decay Energy of the $\alpha$-particles and 37.99 is the Standard \\
+\indent Deviation. 1750 is the provided numerical value of how much MeV is blocked per 1cm.
+
+
+\vskip0.3in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in
+\noindent {\bf CONCLUSION:}\\
+
+\indent The process of the decay of 20,000 atoms of $^{222}$Rn is properly modeled. The average and 
+\indent total energies from each type of decay is calculated, along with standard deviation for each. 
+\indent A 45.83cm shield is necessary to protect from $\alpha$-particle radiation generated from this \\
+\indent radioactive decay chain. \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
